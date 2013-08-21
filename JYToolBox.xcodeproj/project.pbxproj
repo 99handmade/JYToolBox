@@ -31,6 +31,7 @@
 		8A05875217C4ABDB0062CCA6 /* JYToolBox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JYToolBox-Prefix.pch"; sourceTree = "<group>"; };
 		8A05875317C4ABDB0062CCA6 /* JYToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYToolBox.h; sourceTree = "<group>"; };
 		8A05875517C4ABDB0062CCA6 /* JYToolBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYToolBox.m; sourceTree = "<group>"; };
+		8A05875C17C4AD480062CCA6 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		8A05875017C4ABDB0062CCA6 /* JYToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				8A05875C17C4AD480062CCA6 /* Common.h */,
 				8A05875317C4ABDB0062CCA6 /* JYToolBox.h */,
 				8A05875517C4ABDB0062CCA6 /* JYToolBox.m */,
 				8A05875117C4ABDB0062CCA6 /* Supporting Files */,
@@ -242,6 +244,7 @@
 				8A05875B17C4ABDB0062CCA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
