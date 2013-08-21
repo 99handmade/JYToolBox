@@ -12,6 +12,7 @@
 		8A05875617C4ABDB0062CCA6 /* JYToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05875517C4ABDB0062CCA6 /* JYToolBox.m */; };
 		8A05876017C4B0B00062CCA6 /* CoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05875F17C4B0B00062CCA6 /* CoreDataOperation.m */; };
 		8A05876217C4B0CF0062CCA6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A05876117C4B0CF0062CCA6 /* CoreData.framework */; };
+		8A05876617C50B280062CCA6 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05876517C50B280062CCA6 /* NSDate+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		8A05875E17C4B0B00062CCA6 /* CoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataOperation.h; sourceTree = "<group>"; };
 		8A05875F17C4B0B00062CCA6 /* CoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataOperation.m; sourceTree = "<group>"; };
 		8A05876117C4B0CF0062CCA6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8A05876417C50B280062CCA6 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
+		8A05876517C50B280062CCA6 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		8A05875017C4ABDB0062CCA6 /* JYToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				8A05876317C50AD10062CCA6 /* Extension */,
 				8A05875D17C4B06C0062CCA6 /* CoreData */,
 				8A05875C17C4AD480062CCA6 /* Common.h */,
 				8A05875317C4ABDB0062CCA6 /* JYToolBox.h */,
@@ -105,6 +109,15 @@
 				8A05875F17C4B0B00062CCA6 /* CoreDataOperation.m */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8A05876317C50AD10062CCA6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8A05876417C50B280062CCA6 /* NSDate+Additions.h */,
+				8A05876517C50B280062CCA6 /* NSDate+Additions.m */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +173,7 @@
 			files = (
 				8A05875617C4ABDB0062CCA6 /* JYToolBox.m in Sources */,
 				8A05876017C4B0B00062CCA6 /* CoreDataOperation.m in Sources */,
+				8A05876617C50B280062CCA6 /* NSDate+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
