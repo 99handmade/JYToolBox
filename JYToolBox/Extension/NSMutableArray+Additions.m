@@ -1,6 +1,6 @@
 //
 //  NSMutableArray+Additions.m
-//  MFSC
+//  JYToolBox
 //
 //  Created by Jiehao YUAN on 26/06/13.
 //  Copyright (c) 2013 yuan.idea. All rights reserved.
