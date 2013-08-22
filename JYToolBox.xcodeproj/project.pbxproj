@@ -12,8 +12,8 @@
 		8A05875617C4ABDB0062CCA6 /* JYToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05875517C4ABDB0062CCA6 /* JYToolBox.m */; };
 		8A05876017C4B0B00062CCA6 /* CoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05875F17C4B0B00062CCA6 /* CoreDataOperation.m */; };
 		8A05876217C4B0CF0062CCA6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A05876117C4B0CF0062CCA6 /* CoreData.framework */; };
-		8A05876617C50B280062CCA6 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05876517C50B280062CCA6 /* NSDate+Additions.m */; };
-		8A05876917C514E40062CCA6 /* NSObjectEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05876817C514E40062CCA6 /* NSObjectEx.m */; };
+		8A98134C17C5FC8F00E73C41 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98134917C5FC8F00E73C41 /* NSDate+Additions.m */; };
+		8A98134D17C5FC8F00E73C41 /* NSObjectEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,10 +39,10 @@
 		8A05875E17C4B0B00062CCA6 /* CoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataOperation.h; sourceTree = "<group>"; };
 		8A05875F17C4B0B00062CCA6 /* CoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataOperation.m; sourceTree = "<group>"; };
 		8A05876117C4B0CF0062CCA6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		8A05876417C50B280062CCA6 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
-		8A05876517C50B280062CCA6 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
-		8A05876717C514E40062CCA6 /* NSObjectEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectEx.h; sourceTree = "<group>"; };
-		8A05876817C514E40062CCA6 /* NSObjectEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectEx.m; sourceTree = "<group>"; };
+		8A98134817C5FC8F00E73C41 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
+		8A98134917C5FC8F00E73C41 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
+		8A98134A17C5FC8F00E73C41 /* NSObjectEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectEx.h; sourceTree = "<group>"; };
+		8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectEx.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +117,12 @@
 		8A05876317C50AD10062CCA6 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8A05876417C50B280062CCA6 /* NSDate+Additions.h */,
-				8A05876517C50B280062CCA6 /* NSDate+Additions.m */,
-				8A05876717C514E40062CCA6 /* NSObjectEx.h */,
-				8A05876817C514E40062CCA6 /* NSObjectEx.m */,
+				8A98134817C5FC8F00E73C41 /* NSDate+Additions.h */,
+				8A98134917C5FC8F00E73C41 /* NSDate+Additions.m */,
+				8A98134A17C5FC8F00E73C41 /* NSObjectEx.h */,
+				8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */,
 			);
-			name = Extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +178,8 @@
 			files = (
 				8A05875617C4ABDB0062CCA6 /* JYToolBox.m in Sources */,
 				8A05876017C4B0B00062CCA6 /* CoreDataOperation.m in Sources */,
-				8A05876617C50B280062CCA6 /* NSDate+Additions.m in Sources */,
-				8A05876917C514E40062CCA6 /* NSObjectEx.m in Sources */,
+				8A98134C17C5FC8F00E73C41 /* NSDate+Additions.m in Sources */,
+				8A98134D17C5FC8F00E73C41 /* NSObjectEx.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
