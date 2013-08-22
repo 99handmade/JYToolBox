@@ -14,6 +14,8 @@
 		8A05876217C4B0CF0062CCA6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A05876117C4B0CF0062CCA6 /* CoreData.framework */; };
 		8A98134C17C5FC8F00E73C41 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98134917C5FC8F00E73C41 /* NSDate+Additions.m */; };
 		8A98134D17C5FC8F00E73C41 /* NSObjectEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */; };
+		8A98135517C604CC00E73C41 /* NSArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98135217C604CC00E73C41 /* NSArray+Additions.m */; };
+		8A98135617C604CC00E73C41 /* NSMutableArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98135417C604CC00E73C41 /* NSMutableArray+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,10 @@
 		8A98134917C5FC8F00E73C41 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
 		8A98134A17C5FC8F00E73C41 /* NSObjectEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectEx.h; sourceTree = "<group>"; };
 		8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectEx.m; sourceTree = "<group>"; };
+		8A98135117C604CC00E73C41 /* NSArray+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Additions.h"; sourceTree = "<group>"; };
+		8A98135217C604CC00E73C41 /* NSArray+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Additions.m"; sourceTree = "<group>"; };
+		8A98135317C604CC00E73C41 /* NSMutableArray+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Additions.h"; sourceTree = "<group>"; };
+		8A98135417C604CC00E73C41 /* NSMutableArray+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,10 @@
 			children = (
 				8A98134817C5FC8F00E73C41 /* NSDate+Additions.h */,
 				8A98134917C5FC8F00E73C41 /* NSDate+Additions.m */,
+				8A98135117C604CC00E73C41 /* NSArray+Additions.h */,
+				8A98135217C604CC00E73C41 /* NSArray+Additions.m */,
+				8A98135317C604CC00E73C41 /* NSMutableArray+Additions.h */,
+				8A98135417C604CC00E73C41 /* NSMutableArray+Additions.m */,
 				8A98134A17C5FC8F00E73C41 /* NSObjectEx.h */,
 				8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */,
 			);
@@ -180,6 +190,8 @@
 				8A05876017C4B0B00062CCA6 /* CoreDataOperation.m in Sources */,
 				8A98134C17C5FC8F00E73C41 /* NSDate+Additions.m in Sources */,
 				8A98134D17C5FC8F00E73C41 /* NSObjectEx.m in Sources */,
+				8A98135517C604CC00E73C41 /* NSArray+Additions.m in Sources */,
+				8A98135617C604CC00E73C41 /* NSMutableArray+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
