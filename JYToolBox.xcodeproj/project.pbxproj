@@ -18,6 +18,8 @@
 		8A98135617C604CC00E73C41 /* NSMutableArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98135417C604CC00E73C41 /* NSMutableArray+Additions.m */; };
 		8A98135917C6103600E73C41 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98135817C6103600E73C41 /* NSString+Additions.m */; };
 		8A98135C17C611EC00E73C41 /* UIBarButtonItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98135B17C611EC00E73C41 /* UIBarButtonItem+Additions.m */; };
+		8A98136217C617DB00E73C41 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98136117C617DA00E73C41 /* UIImage+Additions.m */; };
+		8A98136417C6182100E73C41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A98136317C6182100E73C41 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +57,9 @@
 		8A98135817C6103600E73C41 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		8A98135A17C611EC00E73C41 /* UIBarButtonItem+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Additions.h"; sourceTree = "<group>"; };
 		8A98135B17C611EC00E73C41 /* UIBarButtonItem+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Additions.m"; sourceTree = "<group>"; };
+		8A98136017C617DA00E73C41 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		8A98136117C617DA00E73C41 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		8A98136317C6182100E73C41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A98136417C6182100E73C41 /* UIKit.framework in Frameworks */,
 				8A05876217C4B0CF0062CCA6 /* CoreData.framework in Frameworks */,
 				8A05874F17C4ABDB0062CCA6 /* Foundation.framework in Frameworks */,
 			);
@@ -90,6 +96,7 @@
 		8A05874D17C4ABDB0062CCA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A98136317C6182100E73C41 /* UIKit.framework */,
 				8A05876117C4B0CF0062CCA6 /* CoreData.framework */,
 				8A05874E17C4ABDB0062CCA6 /* Foundation.framework */,
 			);
@@ -139,6 +146,8 @@
 				8A98135817C6103600E73C41 /* NSString+Additions.m */,
 				8A98135A17C611EC00E73C41 /* UIBarButtonItem+Additions.h */,
 				8A98135B17C611EC00E73C41 /* UIBarButtonItem+Additions.m */,
+				8A98136017C617DA00E73C41 /* UIImage+Additions.h */,
+				8A98136117C617DA00E73C41 /* UIImage+Additions.m */,
 				8A98134A17C5FC8F00E73C41 /* NSObjectEx.h */,
 				8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */,
 			);
@@ -204,6 +213,7 @@
 				8A98135617C604CC00E73C41 /* NSMutableArray+Additions.m in Sources */,
 				8A98135917C6103600E73C41 /* NSString+Additions.m in Sources */,
 				8A98135C17C611EC00E73C41 /* UIBarButtonItem+Additions.m in Sources */,
+				8A98136217C617DB00E73C41 /* UIImage+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
