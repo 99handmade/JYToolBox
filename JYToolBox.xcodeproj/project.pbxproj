@@ -20,6 +20,7 @@
 		8A98135C17C611EC00E73C41 /* UIBarButtonItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98135B17C611EC00E73C41 /* UIBarButtonItem+Additions.m */; };
 		8A98136217C617DB00E73C41 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98136117C617DA00E73C41 /* UIImage+Additions.m */; };
 		8A98136417C6182100E73C41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A98136317C6182100E73C41 /* UIKit.framework */; };
+		8A98136717C61A8800E73C41 /* UIPageControlEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98136617C61A8800E73C41 /* UIPageControlEx.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,8 @@
 		8A98136017C617DA00E73C41 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
 		8A98136117C617DA00E73C41 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
 		8A98136317C6182100E73C41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A98136517C61A8700E73C41 /* UIPageControlEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPageControlEx.h; sourceTree = "<group>"; };
+		8A98136617C61A8800E73C41 /* UIPageControlEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPageControlEx.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				8A98136117C617DA00E73C41 /* UIImage+Additions.m */,
 				8A98134A17C5FC8F00E73C41 /* NSObjectEx.h */,
 				8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */,
+				8A98136517C61A8700E73C41 /* UIPageControlEx.h */,
+				8A98136617C61A8800E73C41 /* UIPageControlEx.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 				8A98135917C6103600E73C41 /* NSString+Additions.m in Sources */,
 				8A98135C17C611EC00E73C41 /* UIBarButtonItem+Additions.m in Sources */,
 				8A98136217C617DB00E73C41 /* UIImage+Additions.m in Sources */,
+				8A98136717C61A8800E73C41 /* UIPageControlEx.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
