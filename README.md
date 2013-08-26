@@ -50,6 +50,6 @@ To fetch managed object from Core Data data base, create a related class for the
                                                          
 [[CoreDataOperation sharedCoreDataOperation] addRelationshipMappingDictionary:[NSDictionary dictionaryWithObjectsAndKeys:
                                                                                @"CoreDataEement", @"aSet", nil]
-                                                            relatedClassName:@"UserList"];
+                                                            relatedClassName:@"RelatedObjectClass"];
 </code>
 </pre>
