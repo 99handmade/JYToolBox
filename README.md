@@ -44,8 +44,7 @@ To fetch managed object from Core Data data base, create a related class for the
                                                                  
 [[CoreDataOperation sharedCoreDataOperation] addPropertyMappingDictionary:[NSDictionary dictionaryWithObjectsAndKeys:
                                                                            @"aInteger", @"aNumber",
-                                                                           @"aRelatedObject", @"aObject",
-                                                                           @"aArray", @"aSet", nil]
+                                                                           @"aRelatedObject", @"aObject", nil]
                                                          relatedClassName:@"RelatedObjectClass"];
                                                          
 [[CoreDataOperation sharedCoreDataOperation] addRelationshipMappingDictionary:[NSDictionary dictionaryWithObjectsAndKeys:
