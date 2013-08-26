@@ -13,7 +13,8 @@ CoreDataOperation - a class to use CoreData in multi-thread and to not block the
 
 To fetch managed object from Core Data data base, create a related class for the core data managed class, for example :
 
-///////// ManagedObjectClass /////////
+<pre>
+<code>
 @interface ManagedObjectClass : NSManagedObject
 
 @property (nonatomic, retain) NSNumber * aNumber;
@@ -21,10 +22,11 @@ To fetch managed object from Core Data data base, create a related class for the
 @property (nonatomic, retain) NSSet *    aSet;     //who contains CoreDataElement object
 
 @end
-///////// end /////////
+</code>
+</pre>
 
-///////// RelatedObjectClass /////////
-
+<pre>
+<code>
 @interface RelatedObjectClass : NSObject
 
 @property (nonatomic, assign) NSInteger   aInteger;
@@ -32,9 +34,11 @@ To fetch managed object from Core Data data base, create a related class for the
 @property (nonatomic, strong) NSArray *   aSet;    //must be the same name to managed object class
 
 @end
+</code>
+</pre>
 
-///////// end /////////
-
+<pre>
+<code>
 [[CoreDataOperation sharedCoreDataOperation] addClassRelationsWithManagedObjectClassName:@"ManagedObjectClass"
                                                                  relatedObjectClassName:@"RelatedObjectClass"];
                                                                  
@@ -47,3 +51,5 @@ To fetch managed object from Core Data data base, create a related class for the
 [[CoreDataOperation sharedCoreDataOperation] addRelationshipMappingDictionary:[NSDictionary dictionaryWithObjectsAndKeys:
                                                                                @"CoreDataEement", @"aSet", nil]
                                                             relatedClassName:@"UserList"];
+</code>
+</pre>
