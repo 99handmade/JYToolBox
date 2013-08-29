@@ -21,6 +21,7 @@
 		8A98136217C617DB00E73C41 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98136117C617DA00E73C41 /* UIImage+Additions.m */; };
 		8A98136417C6182100E73C41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A98136317C6182100E73C41 /* UIKit.framework */; };
 		8A98136717C61A8800E73C41 /* UIPageControlEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98136617C61A8800E73C41 /* UIPageControlEx.m */; };
+		8A98136D17C660A000E73C41 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98136C17C660A000E73C41 /* UIView+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +64,8 @@
 		8A98136317C6182100E73C41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A98136517C61A8700E73C41 /* UIPageControlEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPageControlEx.h; sourceTree = "<group>"; };
 		8A98136617C61A8800E73C41 /* UIPageControlEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPageControlEx.m; sourceTree = "<group>"; };
+		8A98136B17C660A000E73C41 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		8A98136C17C660A000E73C41 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				8A98135817C6103600E73C41 /* NSString+Additions.m */,
 				8A98135A17C611EC00E73C41 /* UIBarButtonItem+Additions.h */,
 				8A98135B17C611EC00E73C41 /* UIBarButtonItem+Additions.m */,
+				8A98136B17C660A000E73C41 /* UIView+Additions.h */,
+				8A98136C17C660A000E73C41 /* UIView+Additions.m */,
 				8A98136017C617DA00E73C41 /* UIImage+Additions.h */,
 				8A98136117C617DA00E73C41 /* UIImage+Additions.m */,
 				8A98134A17C5FC8F00E73C41 /* NSObjectEx.h */,
@@ -220,6 +225,7 @@
 				8A98135C17C611EC00E73C41 /* UIBarButtonItem+Additions.m in Sources */,
 				8A98136217C617DB00E73C41 /* UIImage+Additions.m in Sources */,
 				8A98136717C61A8800E73C41 /* UIPageControlEx.m in Sources */,
+				8A98136D17C660A000E73C41 /* UIView+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
