@@ -31,7 +31,7 @@
 
 #define NAVIGATION_BAR_HEIGHT             44
 #define TAB_BAR_HEIGHT                    49
-#define STATUS_BAR_HEIGHT                 20
+#define STATUS_BAR_HEIGHT                 [[UIApplication sharedApplication] statusBarFrame].size.height
 
 
 
