@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 yuan.idea. All rights reserved.
 //
 
-#ifndef MFSC_Common_h
-#define MFSC_Common_h
+#ifndef JYTOOLBOX_Common_h
+#define JYTOOLBOX_Common_h
 
 
 
@@ -74,5 +74,42 @@
 ////////////////////////////////////////////////////////////////////////////////
 //////////Notification
 ////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//////////Other
+////////////////////////////////////////////////////////////////////////////////
+
+void fillMatrix(int ** matrix, int size) {
+  
+  int line = 0;
+  int row = 0;
+  int origin = 0;
+  int length = size - 1;
+  
+  for (int number = 1; number <= size * size; number++) {
+    
+    matrix[line][row] = number;
+    
+    if (line == origin + 1 && row == origin) {
+      origin = origin + 1;
+      length = length - 1;
+    }
+    
+    if (line == origin && row != length) {
+      row++;
+    }
+    else if (row == length && line != length) {
+      line++;
+    }
+    else if (line == length && row != origin) {
+      row--;
+    }
+    else if (row == origin && line != origin) {
+      line--;
+    }
+  }
+}
 
 #endif

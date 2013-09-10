@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A011FF117DA1ABE00C8D82E /* UITableViewEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A011FF017DA1ABE00C8D82E /* UITableViewEx.m */; };
+		8A011FF417DA1E8500C8D82E /* UITableViewCellEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A011FF317DA1E8500C8D82E /* UITableViewCellEx.m */; };
+		8A011FF717DA1EDC00C8D82E /* CheckableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A011FF617DA1EDB00C8D82E /* CheckableButton.m */; };
 		8A05874F17C4ABDB0062CCA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A05874E17C4ABDB0062CCA6 /* Foundation.framework */; };
 		8A05875417C4ABDB0062CCA6 /* JYToolBox.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A05875317C4ABDB0062CCA6 /* JYToolBox.h */; };
 		8A05875617C4ABDB0062CCA6 /* JYToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05875517C4ABDB0062CCA6 /* JYToolBox.m */; };
@@ -38,6 +41,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A011FEF17DA1ABE00C8D82E /* UITableViewEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewEx.h; sourceTree = "<group>"; };
+		8A011FF017DA1ABE00C8D82E /* UITableViewEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewEx.m; sourceTree = "<group>"; };
+		8A011FF217DA1E8400C8D82E /* UITableViewCellEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellEx.h; sourceTree = "<group>"; };
+		8A011FF317DA1E8500C8D82E /* UITableViewCellEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewCellEx.m; sourceTree = "<group>"; };
+		8A011FF517DA1EDB00C8D82E /* CheckableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckableButton.h; sourceTree = "<group>"; };
+		8A011FF617DA1EDB00C8D82E /* CheckableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckableButton.m; sourceTree = "<group>"; };
 		8A05874B17C4ABDB0062CCA6 /* libJYToolBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJYToolBox.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A05874E17C4ABDB0062CCA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A05875217C4ABDB0062CCA6 /* JYToolBox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JYToolBox-Prefix.pch"; sourceTree = "<group>"; };
@@ -160,6 +169,12 @@
 				8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */,
 				8A98136517C61A8700E73C41 /* UIPageControlEx.h */,
 				8A98136617C61A8800E73C41 /* UIPageControlEx.m */,
+				8A011FEF17DA1ABE00C8D82E /* UITableViewEx.h */,
+				8A011FF017DA1ABE00C8D82E /* UITableViewEx.m */,
+				8A011FF217DA1E8400C8D82E /* UITableViewCellEx.h */,
+				8A011FF317DA1E8500C8D82E /* UITableViewCellEx.m */,
+				8A011FF517DA1EDB00C8D82E /* CheckableButton.h */,
+				8A011FF617DA1EDB00C8D82E /* CheckableButton.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -226,6 +241,9 @@
 				8A98136217C617DB00E73C41 /* UIImage+Additions.m in Sources */,
 				8A98136717C61A8800E73C41 /* UIPageControlEx.m in Sources */,
 				8A98136D17C660A000E73C41 /* UIView+Additions.m in Sources */,
+				8A011FF117DA1ABE00C8D82E /* UITableViewEx.m in Sources */,
+				8A011FF417DA1E8500C8D82E /* UITableViewCellEx.m in Sources */,
+				8A011FF717DA1EDC00C8D82E /* CheckableButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
