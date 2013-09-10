@@ -17,6 +17,7 @@
 @property (atomic, strong, readonly) NSMutableDictionary *                classMappingDictionary;
 @property (atomic, strong, readonly) NSMutableDictionary *                propertyMappingDictionary;
 @property (atomic, strong, readonly) NSMutableDictionary *                relationshipMappingDictionary;
+@property (atomic, strong, readonly) NSMutableDictionary *                fetchedPropertyMappingDictionary;
 
 + (CoreDataOperation *)sharedCoreDataOperation;
 
@@ -26,6 +27,8 @@
 - (void)addPropertyMappingDictionary:(NSDictionary *)propertyMappingDictionary relatedClassName:(NSString *)relatedClassName;
 
 - (void)addRelationshipMappingDictionary:(NSDictionary *)relationshipMappingDictionary relatedClassName:(NSString *)relatedClassName;
+
+- (void)addFetchedPropertyMappingDictionary:(NSDictionary *)fetchedPropertyMappingDictionary relatedClassName:(NSString *)relatedClassName;
 
 - (void)setDbName:(NSString *)name;
 

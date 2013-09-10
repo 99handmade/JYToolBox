@@ -29,6 +29,7 @@
 @synthesize classMappingDictionary                  = _classMappingDictionary;
 @synthesize propertyMappingDictionary               = _propertyMappingDictionary;
 @synthesize relationshipMappingDictionary           = _relationshipMappingDictionary;
+@synthesize fetchedPropertyMappingDictionary        = _fetchedPropertyMappingDictionary;
 
 static CoreDataOperation *  _coreDataOperation = nil;
 static NSString *           _dbName = nil;
@@ -68,6 +69,7 @@ static NSString *           _dbName = nil;
     _classMappingDictionary = [NSMutableDictionary dictionaryWithCapacity:0];
     _propertyMappingDictionary = [NSMutableDictionary dictionaryWithCapacity:0];
     _relationshipMappingDictionary = [NSMutableDictionary dictionaryWithCapacity:0];
+    _fetchedPropertyMappingDictionary = [NSMutableDictionary dictionaryWithCapacity:0];
   }
   return self;
 }
@@ -102,6 +104,11 @@ static NSString *           _dbName = nil;
 - (void)addRelationshipMappingDictionary:(NSDictionary *)relationshipMappingDictionary relatedClassName:(NSString *)relatedClassName
 {
   [_relationshipMappingDictionary setObject:relationshipMappingDictionary forKey:relatedClassName];
+}
+
+- (void)addFetchedPropertyMappingDictionary:(NSDictionary *)fetchedPropertyMappingDictionary relatedClassName:(NSString *)relatedClassName
+{
+  [_fetchedPropertyMappingDictionary setObject:fetchedPropertyMappingDictionary forKey:relatedClassName];
 }
 
 
@@ -157,6 +164,7 @@ static NSString *           _dbName = nil;
       }
     }
     
+    ///relation fetch
     NSDictionary * relationshipDic = [self.relationshipMappingDictionary objectForKey:relatedClassName];
     
     for (NSString * coredataRelationshipName in relationshipDic.allKeys) {
@@ -170,6 +178,23 @@ static NSString *           _dbName = nil;
       }
       [relatedObject setValue:relationshipArray forKey:coredataRelationshipName];
     }
+    
+    ///fetched property fetch
+    NSDictionary * fetchedPropertyDic = [self.fetchedPropertyMappingDictionary objectForKey:relatedClassName];
+    
+    for (NSString * coredataFetchedPropertyName in fetchedPropertyDic.allKeys) {
+      NSMutableArray * fetchedPropertyArray = [NSMutableArray arrayWithCapacity:0];
+      NSSet * objSet = [managedObject valueForKey:coredataFetchedPropertyName];
+      for (NSManagedObject * managedObj in objSet) {
+        NSManagedObjectID * managedObjectID = managedObj.objectID;
+        NSManagedObject * fullManagedObj = [managedObj.managedObjectContext existingObjectWithID:managedObjectID error:nil];
+        id obj = [self relatedObjectWithManagedObject:fullManagedObj];
+        [fetchedPropertyArray addObject:obj];
+      }
+      [relatedObject setValue:fetchedPropertyArray forKey:coredataFetchedPropertyName];
+    }
+    
+    
     return relatedObject;
   }
   
