@@ -77,9 +77,9 @@ static NSString *           _dbName = nil;
 - (void)dealloc
 {
   // !!!if develop target change to iOS6, delete the release!!!
-  dispatch_release(self.reading_dispatch_group);
-  dispatch_release(self.writing_dispatch_group);
-  dispatch_release(self.writing_dispatch_queue);
+  //  dispatch_release(self.reading_dispatch_group);
+  //  dispatch_release(self.writing_dispatch_group);
+  //  dispatch_release(self.writing_dispatch_queue);
 }
 
 
@@ -110,8 +110,6 @@ static NSString *           _dbName = nil;
 {
   [_fetchedPropertyMappingDictionary setObject:fetchedPropertyMappingDictionary forKey:relatedClassName];
 }
-
-
 
 
 
@@ -155,6 +153,7 @@ static NSString *           _dbName = nil;
 {
   //get the class name related the managed object class
   NSString * relatedClassName = [_classMappingDictionary objectForKey:managedObject.entity.name];
+  
   if (relatedClassName != nil && relatedClassName.length > 0) {
     id relatedObject = [[NSClassFromString(relatedClassName) alloc] init];
     NSDictionary * propertyDic = [self.propertyMappingDictionary objectForKey:relatedClassName];
@@ -193,7 +192,6 @@ static NSString *           _dbName = nil;
       }
       [relatedObject setValue:fetchedPropertyArray forKey:coredataFetchedPropertyName];
     }
-    
     
     return relatedObject;
   }
@@ -259,10 +257,10 @@ static NSString *           _dbName = nil;
   });
 }
 
-- (void)saveManagedObjectWithOperation:(void(^)(NSManagedObjectContext * managedObjContext, NSError * error))operation
+- (void)saveManagedObjectWithOperation:(void(^)(NSManagedObjectContext * managedObjContext, NSError * error, NSUndoManager * undoManager))operation
             persistentStoreCoordinator:(NSPersistentStoreCoordinator *)persistentStoreCoordinator
                                success:(void(^)(void))success
-                               failure:(void(^)(NSError * error))failure
+                               failure:(void(^)(NSError * error, NSUndoManager * undoManager))failure
                      finalInMainThread:(void(^)(void))final
 {
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
@@ -271,7 +269,7 @@ static NSString *           _dbName = nil;
     
     dispatch_group_async(self.writing_dispatch_group, self.writing_dispatch_queue, ^{
       
-#warning TODO  if overtime
+#warning TODO  if over time
       
       NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc]
                                                        initWithConcurrencyType:NSPrivateQueueConcurrencyType];
@@ -282,20 +280,40 @@ static NSString *           _dbName = nil;
       else {
         managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator;
       }
-
+      
       managedObjectContext.undoManager = [[NSUndoManager alloc] init];
       
       NSError * error = nil;
-      operation(managedObjectContext, error);
+      operation(managedObjectContext, error, managedObjectContext.undoManager);
       if (error != nil) {
-        failure([NSError errorWithDomain:NSCocoaErrorDomain code:-1 userInfo:nil]);
+        failure([NSError errorWithDomain:NSCocoaErrorDomain code:-1 userInfo:nil], managedObjectContext.undoManager);
       }
       else {
         success();
       }
+      
       dispatch_sync(dispatch_get_main_queue(), final);
     });
   });
+}
+
+- (void)saveManagedObjectSynchronousWithOperation:(void(^)(NSManagedObjectContext * managedObjContext, NSError * error, NSUndoManager * undoManager))operation
+                       persistentStoreCoordinator:(NSPersistentStoreCoordinator *)persistentStoreCoordinator
+{
+  NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc]
+                                                   initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+  
+  if (persistentStoreCoordinator == nil) {
+    managedObjectContext.persistentStoreCoordinator = self.persistentStoreCoordinator;
+  }
+  else {
+    managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator;
+  }
+  
+  managedObjectContext.undoManager = [[NSUndoManager alloc] init];
+  
+  NSError * error = nil;
+  operation(managedObjectContext, error, managedObjectContext.undoManager);
 }
 
 - (NSArray *)fetchSynchronousWithEntityName:(NSString *)entityName
@@ -328,7 +346,8 @@ static NSString *           _dbName = nil;
   if (sortDescriptor != nil) {
     [request setSortDescriptors:@[sortDescriptor]];
   }
-
+  
+  
   NSError * error;
   NSArray * fetchResultArray = [managedObjectContext executeFetchRequest:request error:&error];
   NSMutableArray * returnResultArray = [NSMutableArray arrayWithCapacity:0];
@@ -343,6 +362,123 @@ static NSString *           _dbName = nil;
   }
   
   return nil;
+}
+
+- (void)deleteWithEntityName:(NSString *)entityName
+             predicateFormat:(NSString *)predicateFormat
+              sortDescriptor:(NSSortDescriptor *)sortDescriptor
+  persistentStoreCoordinator:(NSPersistentStoreCoordinator *)persistentStoreCoordinator
+                     success:(void (^)(void))success
+                     failure:(void (^)(NSError *))failure
+           finalInMainThread:(void (^)(void))final
+{
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+    
+    dispatch_group_wait(self.reading_dispatch_group, DISPATCH_TIME_FOREVER);
+    
+    dispatch_group_async(self.writing_dispatch_group, self.writing_dispatch_queue, ^{
+      
+#warning TODO  if over time
+      
+      NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc]
+                                                       initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+      
+      if (persistentStoreCoordinator == nil) {
+        managedObjectContext.persistentStoreCoordinator = self.persistentStoreCoordinator;
+      }
+      else {
+        managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator;
+      }
+      
+      managedObjectContext.undoManager = [[NSUndoManager alloc] init];
+      
+      NSEntityDescription * entityDescription = [NSEntityDescription entityForName:entityName
+                                                            inManagedObjectContext:managedObjectContext];
+      NSFetchRequest * request = [[NSFetchRequest alloc] init];
+      request.returnsObjectsAsFaults = TRUE;
+      request.includesPropertyValues = FALSE;
+      request.entity = entityDescription;
+      
+      
+      if (predicateFormat != nil) {
+        NSPredicate * predicate = [NSPredicate predicateWithFormat:predicateFormat];
+        [request setPredicate:predicate];
+      }
+      
+      if (sortDescriptor != nil) {
+        [request setSortDescriptors:@[sortDescriptor]];
+      }
+      
+      
+      NSError * error = nil;
+      NSArray * fetchResultArray = [managedObjectContext executeFetchRequest:request error:&error];
+      
+      if (error == nil) {
+        for (NSManagedObject * objectToDelete in fetchResultArray) {
+          [managedObjectContext deleteObject:objectToDelete];
+        }
+        
+        [managedObjectContext save:&error];
+        success();
+      }
+      else {
+        [managedObjectContext.undoManager undo];
+        failure(error);
+      }
+      
+      dispatch_sync(dispatch_get_main_queue(), final);
+    });
+  });
+}
+
+- (void)deleteSynchronousWithEntityName:(NSString *)entityName
+                        predicateFormat:(NSString *)predicateFormat
+                         sortDescriptor:(NSSortDescriptor *)sortDescriptor
+             persistentStoreCoordinator:(NSPersistentStoreCoordinator *)persistentStoreCoordinator
+{
+  NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc]
+                                                   initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+  
+  if (persistentStoreCoordinator == nil) {
+    managedObjectContext.persistentStoreCoordinator = self.persistentStoreCoordinator;
+  }
+  else {
+    managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator;
+  }
+  
+  managedObjectContext.undoManager = [[NSUndoManager alloc] init];
+  
+  NSEntityDescription * entityDescription = [NSEntityDescription entityForName:entityName
+                                                        inManagedObjectContext:managedObjectContext];
+  NSFetchRequest * request = [[NSFetchRequest alloc] init];
+  request.returnsObjectsAsFaults = TRUE;
+  request.includesPropertyValues = FALSE;
+  request.entity = entityDescription;
+  
+  
+  if (predicateFormat != nil) {
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:predicateFormat];
+    [request setPredicate:predicate];
+  }
+  
+  if (sortDescriptor != nil) {
+    [request setSortDescriptors:@[sortDescriptor]];
+  }
+  
+  
+  NSError * error = nil;
+  NSArray * fetchResultArray = [managedObjectContext executeFetchRequest:request error:&error];
+  
+  if (error == nil) {
+    for (NSManagedObject * objectToDelete in fetchResultArray) {
+      [managedObjectContext deleteObject:objectToDelete];
+    }
+    
+    [managedObjectContext save:&error];
+  }
+  else {
+    [managedObjectContext.undoManager undo];
+  }
 }
 
 @end

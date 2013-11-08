@@ -16,7 +16,7 @@
 
 @property (atomic, strong, readonly) NSMutableDictionary *                classMappingDictionary;
 @property (atomic, strong, readonly) NSMutableDictionary *                propertyMappingDictionary;
-@property (atomic, strong, readonly) NSMutableDictionary *                relationshipMappingDictionary;
+@property (atomic, strong ,readonly) NSMutableDictionary *                relationshipMappingDictionary;
 @property (atomic, strong, readonly) NSMutableDictionary *                fetchedPropertyMappingDictionary;
 
 + (CoreDataOperation *)sharedCoreDataOperation;
@@ -40,15 +40,31 @@
                     failure:(void (^)(NSError * error))failure
           finalInMainThread:(void (^)(void))final;
 
-- (void)saveManagedObjectWithOperation:(void(^)(NSManagedObjectContext * managedObjContext, NSError * error))operation
+- (void)saveManagedObjectWithOperation:(void(^)(NSManagedObjectContext * managedObjContext, NSError * error, NSUndoManager * undoManager))operation
             persistentStoreCoordinator:(NSPersistentStoreCoordinator *)persistentStoreCoordinator
                                success:(void(^)(void))success
-                               failure:(void(^)(NSError * error))failure
+                               failure:(void(^)(NSError * error, NSUndoManager * undoManager))failure
                      finalInMainThread:(void(^)(void))final;
+
+- (void)saveManagedObjectSynchronousWithOperation:(void(^)(NSManagedObjectContext * managedObjContext, NSError * error, NSUndoManager * undoManager))operation
+                       persistentStoreCoordinator:(NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 
 - (NSArray *)fetchSynchronousWithEntityName:(NSString *)entityName
                             predicateFormat:(NSString *)predicateFormat
                              sortDescriptor:(NSSortDescriptor *)sortDescriptor
                  persistentStoreCoordinator:(NSPersistentStoreCoordinator *)persistentStoreCoordinator;
+
+- (void)deleteWithEntityName:(NSString *)entityName
+             predicateFormat:(NSString *)predicateFormat
+              sortDescriptor:(NSSortDescriptor *)sortDescriptor
+  persistentStoreCoordinator:(NSPersistentStoreCoordinator *)persistentStoreCoordinator
+                     success:(void (^)(void))success
+                     failure:(void (^)(NSError * error))failure
+           finalInMainThread:(void (^)(void))final;
+
+- (void)deleteSynchronousWithEntityName:(NSString *)entityName
+                        predicateFormat:(NSString *)predicateFormat
+                         sortDescriptor:(NSSortDescriptor *)sortDescriptor
+             persistentStoreCoordinator:(NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 
 @end
