@@ -15,6 +15,27 @@
 		8A05875617C4ABDB0062CCA6 /* JYToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05875517C4ABDB0062CCA6 /* JYToolBox.m */; };
 		8A05876017C4B0B00062CCA6 /* CoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05875F17C4B0B00062CCA6 /* CoreDataOperation.m */; };
 		8A05876217C4B0CF0062CCA6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A05876117C4B0CF0062CCA6 /* CoreData.framework */; };
+		8A37572A183277EB002ADF87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A05874E17C4ABDB0062CCA6 /* Foundation.framework */; };
+		8A37572C183277EB002ADF87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A37572B183277EB002ADF87 /* CoreGraphics.framework */; };
+		8A37572D183277EB002ADF87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A98136317C6182100E73C41 /* UIKit.framework */; };
+		8A375733183277EB002ADF87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A375731183277EB002ADF87 /* InfoPlist.strings */; };
+		8A375735183277EB002ADF87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A375734183277EB002ADF87 /* main.m */; };
+		8A375739183277EB002ADF87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A375738183277EB002ADF87 /* AppDelegate.m */; };
+		8A37573B183277EB002ADF87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A37573A183277EB002ADF87 /* Images.xcassets */; };
+		8A375742183277EB002ADF87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A375741183277EB002ADF87 /* XCTest.framework */; };
+		8A375743183277EC002ADF87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A05874E17C4ABDB0062CCA6 /* Foundation.framework */; };
+		8A375744183277EC002ADF87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A98136317C6182100E73C41 /* UIKit.framework */; };
+		8A37574C183277EC002ADF87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A37574A183277EC002ADF87 /* InfoPlist.strings */; };
+		8A37574E183277EC002ADF87 /* JYToolBoxExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37574D183277EC002ADF87 /* JYToolBoxExampleTests.m */; };
+		8A37575718327F8A002ADF87 /* UITextFieldEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37575618327F8A002ADF87 /* UITextFieldEx.m */; };
+		8A37575818327F8A002ADF87 /* UITextFieldEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37575618327F8A002ADF87 /* UITextFieldEx.m */; };
+		8A37575B18328119002ADF87 /* ExampleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37575A18328119002ADF87 /* ExampleListTableViewController.m */; };
+		8A37575C18328119002ADF87 /* ExampleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37575A18328119002ADF87 /* ExampleListTableViewController.m */; };
+		8A37575F18328165002ADF87 /* UIViewControllerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37575E18328165002ADF87 /* UIViewControllerEx.m */; };
+		8A37576018328165002ADF87 /* UIViewControllerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37575E18328165002ADF87 /* UIViewControllerEx.m */; };
+		8A37576318328355002ADF87 /* UITextFieldExExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37576218328355002ADF87 /* UITextFieldExExampleViewController.m */; };
+		8A37576418328355002ADF87 /* UITextFieldExExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37576218328355002ADF87 /* UITextFieldExExampleViewController.m */; };
+		8A375765183295E9002ADF87 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98136117C617DA00E73C41 /* UIImage+Additions.m */; };
 		8A98134C17C5FC8F00E73C41 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98134917C5FC8F00E73C41 /* NSDate+Additions.m */; };
 		8A98134D17C5FC8F00E73C41 /* NSObjectEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98134B17C5FC8F00E73C41 /* NSObjectEx.m */; };
 		8A98135517C604CC00E73C41 /* NSArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98135217C604CC00E73C41 /* NSArray+Additions.m */; };
@@ -26,6 +47,16 @@
 		8A98136717C61A8800E73C41 /* UIPageControlEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98136617C61A8800E73C41 /* UIPageControlEx.m */; };
 		8A98136D17C660A000E73C41 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A98136C17C660A000E73C41 /* UIView+Additions.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A375745183277EC002ADF87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A05874317C4ABDB0062CCA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A375728183277EB002ADF87;
+			remoteInfo = JYToolBoxExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8A05874917C4ABDB0062CCA6 /* CopyFiles */ = {
@@ -56,6 +87,28 @@
 		8A05875E17C4B0B00062CCA6 /* CoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataOperation.h; sourceTree = "<group>"; };
 		8A05875F17C4B0B00062CCA6 /* CoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataOperation.m; sourceTree = "<group>"; };
 		8A05876117C4B0CF0062CCA6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8A375729183277EB002ADF87 /* JYToolBoxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYToolBoxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A37572B183277EB002ADF87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A375730183277EB002ADF87 /* JYToolBoxExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JYToolBoxExample-Info.plist"; sourceTree = "<group>"; };
+		8A375732183277EB002ADF87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A375734183277EB002ADF87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A375736183277EB002ADF87 /* JYToolBoxExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JYToolBoxExample-Prefix.pch"; sourceTree = "<group>"; };
+		8A375737183277EB002ADF87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A375738183277EB002ADF87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A37573A183277EB002ADF87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A375740183277EB002ADF87 /* JYToolBoxExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYToolBoxExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A375741183277EB002ADF87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8A375749183277EC002ADF87 /* JYToolBoxExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JYToolBoxExampleTests-Info.plist"; sourceTree = "<group>"; };
+		8A37574B183277EC002ADF87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A37574D183277EC002ADF87 /* JYToolBoxExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYToolBoxExampleTests.m; sourceTree = "<group>"; };
+		8A37575518327F8A002ADF87 /* UITextFieldEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldEx.h; sourceTree = "<group>"; };
+		8A37575618327F8A002ADF87 /* UITextFieldEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldEx.m; sourceTree = "<group>"; };
+		8A37575918328119002ADF87 /* ExampleListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleListTableViewController.h; sourceTree = "<group>"; };
+		8A37575A18328119002ADF87 /* ExampleListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleListTableViewController.m; sourceTree = "<group>"; };
+		8A37575D18328165002ADF87 /* UIViewControllerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerEx.h; sourceTree = "<group>"; };
+		8A37575E18328165002ADF87 /* UIViewControllerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerEx.m; sourceTree = "<group>"; };
+		8A37576118328355002ADF87 /* UITextFieldExExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldExExampleViewController.h; sourceTree = "<group>"; };
+		8A37576218328355002ADF87 /* UITextFieldExExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldExExampleViewController.m; sourceTree = "<group>"; };
 		8A98134817C5FC8F00E73C41 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
 		8A98134917C5FC8F00E73C41 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
 		8A98134A17C5FC8F00E73C41 /* NSObjectEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectEx.h; sourceTree = "<group>"; };
@@ -88,6 +141,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A375726183277EB002ADF87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A37572C183277EB002ADF87 /* CoreGraphics.framework in Frameworks */,
+				8A37572D183277EB002ADF87 /* UIKit.framework in Frameworks */,
+				8A37572A183277EB002ADF87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A37573D183277EB002ADF87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A375742183277EB002ADF87 /* XCTest.framework in Frameworks */,
+				8A375744183277EC002ADF87 /* UIKit.framework in Frameworks */,
+				8A375743183277EC002ADF87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				8A05875017C4ABDB0062CCA6 /* JYToolBox */,
+				8A37572E183277EB002ADF87 /* JYToolBoxExample */,
+				8A375747183277EC002ADF87 /* JYToolBoxExampleTests */,
 				8A05874D17C4ABDB0062CCA6 /* Frameworks */,
 				8A05874C17C4ABDB0062CCA6 /* Products */,
 			);
@@ -104,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				8A05874B17C4ABDB0062CCA6 /* libJYToolBox.a */,
+				8A375729183277EB002ADF87 /* JYToolBoxExample.app */,
+				8A375740183277EB002ADF87 /* JYToolBoxExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +191,8 @@
 				8A98136317C6182100E73C41 /* UIKit.framework */,
 				8A05876117C4B0CF0062CCA6 /* CoreData.framework */,
 				8A05874E17C4ABDB0062CCA6 /* Foundation.framework */,
+				8A37572B183277EB002ADF87 /* CoreGraphics.framework */,
+				8A375741183277EB002ADF87 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,8 +254,56 @@
 				8A011FF317DA1E8500C8D82E /* UITableViewCellEx.m */,
 				8A011FF517DA1EDB00C8D82E /* CheckableButton.h */,
 				8A011FF617DA1EDB00C8D82E /* CheckableButton.m */,
+				8A37575518327F8A002ADF87 /* UITextFieldEx.h */,
+				8A37575618327F8A002ADF87 /* UITextFieldEx.m */,
+				8A37575D18328165002ADF87 /* UIViewControllerEx.h */,
+				8A37575E18328165002ADF87 /* UIViewControllerEx.m */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		8A37572E183277EB002ADF87 /* JYToolBoxExample */ = {
+			isa = PBXGroup;
+			children = (
+				8A375737183277EB002ADF87 /* AppDelegate.h */,
+				8A375738183277EB002ADF87 /* AppDelegate.m */,
+				8A37575918328119002ADF87 /* ExampleListTableViewController.h */,
+				8A37575A18328119002ADF87 /* ExampleListTableViewController.m */,
+				8A37576118328355002ADF87 /* UITextFieldExExampleViewController.h */,
+				8A37576218328355002ADF87 /* UITextFieldExExampleViewController.m */,
+				8A37573A183277EB002ADF87 /* Images.xcassets */,
+				8A37572F183277EB002ADF87 /* Supporting Files */,
+			);
+			path = JYToolBoxExample;
+			sourceTree = "<group>";
+		};
+		8A37572F183277EB002ADF87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A375730183277EB002ADF87 /* JYToolBoxExample-Info.plist */,
+				8A375731183277EB002ADF87 /* InfoPlist.strings */,
+				8A375734183277EB002ADF87 /* main.m */,
+				8A375736183277EB002ADF87 /* JYToolBoxExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A375747183277EC002ADF87 /* JYToolBoxExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A37574D183277EC002ADF87 /* JYToolBoxExampleTests.m */,
+				8A375748183277EC002ADF87 /* Supporting Files */,
+			);
+			path = JYToolBoxExampleTests;
+			sourceTree = "<group>";
+		};
+		8A375748183277EC002ADF87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A375749183277EC002ADF87 /* JYToolBoxExampleTests-Info.plist */,
+				8A37574A183277EC002ADF87 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +326,41 @@
 			productReference = 8A05874B17C4ABDB0062CCA6 /* libJYToolBox.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		8A375728183277EB002ADF87 /* JYToolBoxExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A375753183277EC002ADF87 /* Build configuration list for PBXNativeTarget "JYToolBoxExample" */;
+			buildPhases = (
+				8A375725183277EB002ADF87 /* Sources */,
+				8A375726183277EB002ADF87 /* Frameworks */,
+				8A375727183277EB002ADF87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYToolBoxExample;
+			productName = JYToolBoxExample;
+			productReference = 8A375729183277EB002ADF87 /* JYToolBoxExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A37573F183277EB002ADF87 /* JYToolBoxExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A375754183277EC002ADF87 /* Build configuration list for PBXNativeTarget "JYToolBoxExampleTests" */;
+			buildPhases = (
+				8A37573C183277EB002ADF87 /* Sources */,
+				8A37573D183277EB002ADF87 /* Frameworks */,
+				8A37573E183277EB002ADF87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A375746183277EC002ADF87 /* PBXTargetDependency */,
+			);
+			name = JYToolBoxExampleTests;
+			productName = JYToolBoxExampleTests;
+			productReference = 8A375740183277EB002ADF87 /* JYToolBoxExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +369,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = yuan.idea;
+				TargetAttributes = {
+					8A37573F183277EB002ADF87 = {
+						TestTargetID = 8A375728183277EB002ADF87;
+					};
+				};
 			};
 			buildConfigurationList = 8A05874617C4ABDB0062CCA6 /* Build configuration list for PBXProject "JYToolBox" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -221,9 +388,31 @@
 			projectRoot = "";
 			targets = (
 				8A05874A17C4ABDB0062CCA6 /* JYToolBox */,
+				8A375728183277EB002ADF87 /* JYToolBoxExample */,
+				8A37573F183277EB002ADF87 /* JYToolBoxExampleTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A375727183277EB002ADF87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A375733183277EB002ADF87 /* InfoPlist.strings in Resources */,
+				8A37573B183277EB002ADF87 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A37573E183277EB002ADF87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A37574C183277EC002ADF87 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A05874717C4ABDB0062CCA6 /* Sources */ = {
@@ -234,20 +423,73 @@
 				8A05876017C4B0B00062CCA6 /* CoreDataOperation.m in Sources */,
 				8A98134C17C5FC8F00E73C41 /* NSDate+Additions.m in Sources */,
 				8A98134D17C5FC8F00E73C41 /* NSObjectEx.m in Sources */,
+				8A37575B18328119002ADF87 /* ExampleListTableViewController.m in Sources */,
 				8A98135517C604CC00E73C41 /* NSArray+Additions.m in Sources */,
 				8A98135617C604CC00E73C41 /* NSMutableArray+Additions.m in Sources */,
 				8A98135917C6103600E73C41 /* NSString+Additions.m in Sources */,
+				8A37576318328355002ADF87 /* UITextFieldExExampleViewController.m in Sources */,
+				8A37575F18328165002ADF87 /* UIViewControllerEx.m in Sources */,
 				8A98135C17C611EC00E73C41 /* UIBarButtonItem+Additions.m in Sources */,
 				8A98136217C617DB00E73C41 /* UIImage+Additions.m in Sources */,
 				8A98136717C61A8800E73C41 /* UIPageControlEx.m in Sources */,
 				8A98136D17C660A000E73C41 /* UIView+Additions.m in Sources */,
+				8A37575718327F8A002ADF87 /* UITextFieldEx.m in Sources */,
 				8A011FF117DA1ABE00C8D82E /* UITableViewEx.m in Sources */,
 				8A011FF417DA1E8500C8D82E /* UITableViewCellEx.m in Sources */,
 				8A011FF717DA1EDC00C8D82E /* CheckableButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A375725183277EB002ADF87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A37575C18328119002ADF87 /* ExampleListTableViewController.m in Sources */,
+				8A375739183277EB002ADF87 /* AppDelegate.m in Sources */,
+				8A37576418328355002ADF87 /* UITextFieldExExampleViewController.m in Sources */,
+				8A375735183277EB002ADF87 /* main.m in Sources */,
+				8A37575818327F8A002ADF87 /* UITextFieldEx.m in Sources */,
+				8A37576018328165002ADF87 /* UIViewControllerEx.m in Sources */,
+				8A375765183295E9002ADF87 /* UIImage+Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A37573C183277EB002ADF87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A37574E183277EC002ADF87 /* JYToolBoxExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A375746183277EC002ADF87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A375728183277EB002ADF87 /* JYToolBoxExample */;
+			targetProxy = 8A375745183277EC002ADF87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A375731183277EB002ADF87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A375732183277EB002ADF87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A37574A183277EC002ADF87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A37574B183277EC002ADF87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8A05875717C4ABDB0062CCA6 /* Debug */ = {
@@ -327,6 +569,120 @@
 			};
 			name = Release;
 		};
+		8A37574F183277EC002ADF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JYToolBoxExample/JYToolBoxExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "JYToolBoxExample/JYToolBoxExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8A375750183277EC002ADF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JYToolBoxExample/JYToolBoxExample-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "JYToolBoxExample/JYToolBoxExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8A375751183277EC002ADF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JYToolBoxExample.app/JYToolBoxExample";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JYToolBoxExample/JYToolBoxExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "JYToolBoxExampleTests/JYToolBoxExampleTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8A375752183277EC002ADF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JYToolBoxExample.app/JYToolBoxExample";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JYToolBoxExample/JYToolBoxExample-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "JYToolBoxExampleTests/JYToolBoxExampleTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -347,6 +703,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8A375753183277EC002ADF87 /* Build configuration list for PBXNativeTarget "JYToolBoxExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A37574F183277EC002ADF87 /* Debug */,
+				8A375750183277EC002ADF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8A375754183277EC002ADF87 /* Build configuration list for PBXNativeTarget "JYToolBoxExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A375751183277EC002ADF87 /* Debug */,
+				8A375752183277EC002ADF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
