@@ -1,10 +1,10 @@
 JYToolBox
 =========
-
+<pre>
 <p>JYToolBox is a light tool library for iOS development, I write this for those who wants to control his project absolutely, I mean, 100% full pure code, never take a big holy library if we have another choice, just like me :)
 
 You don't need to install the JYToolBox, take a glance at the wiki page, and choose which class you need, also you can change it as you want, there is no relation between them. The majority of code is written by myself, and others were taken from some blog, forum, open-source project and so on.</p>
-
+</pre>
 
 <pre>
 <p>JYToolBox est une bibliothèque légère pour iOS développement, j'écris cette bibliothèque pour des gens qui veulent controller son projet absolument, c'est-à-dire, tout fait à la main, jamais prendre une gros bibliothèque si on a l'autre choix, comme moi :)
