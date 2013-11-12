@@ -3,6 +3,7 @@ JYToolBox
 
 [update log]
 
+- (12/11/2013) [UIImage+Additions]correct null context error for : + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size
 - (12/11/2013) <b>add demonstrator project target</b>
 
 <pre>
