@@ -3,7 +3,7 @@ JYToolBox
 
 [update log]
 
-- <12/11/2013> <font color="#d14">add demonstrator</font>
+- <12/11/2013> add demonstrator
 
 <pre>
 <p>JYToolBox is a light tool library for iOS development, I write this for those who wants to control his project absolutely, I mean, 100% full pure code, never take a big holy library if we have another choice, just like me :)
