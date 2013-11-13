@@ -164,7 +164,7 @@
 - (void)didClickButton
 {
   //call root view method
-  if ([self.rootTableView respondsToSelector:@selector(didClickButtonWithCell:)]) {
+  if ([self.rootTableView respondsToSelector:@selector(tableView:didClickButtonAtIndexPath:)]) {
     [(UITableViewEx *)self.rootTableView didClickButtonWithCell:self];
   }
 }
