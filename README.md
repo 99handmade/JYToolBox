@@ -3,8 +3,9 @@ JYToolBox
 
 [update log]
 
+- (13/11/2013) add UITextFieldEx class
 - (12/11/2013) [UIImage+Additions]correct null context error for : + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size
-- (12/11/2013) <b>add demonstrator project target</b>
+- (12/11/2013) add demonstrator project target
 
 <pre>
 <p>JYToolBox is a light tool library for iOS development, I write this for those who wants to control his project absolutely, I mean, 100% full pure code, never take a big holy library if we have another choice, just like me :)
